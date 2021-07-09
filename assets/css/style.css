@@ -1,8 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Orbitron&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #59C2D9;
     color: black;
     font-family: 'Caesar Dressing', cursive;
     text-align: center;
 }
+
+p{
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* ================================================= NAVIGATION ================================================= */
+#navigation {
+    line-height: 100px;
+    font-size:175%;
+}
+
+.list-items {
+    display:flex;
+    justify-content:center;
+}
+
+.list-items li {
+    margin: 0 20px;
+    list-style-type: none;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navigation .active {
+    border-bottom: 3px solid black;
+}
+
+#navigation a:hover {
+    font-weight: bolder;
+    color: red;
+    border-bottom: none;
+}
+
