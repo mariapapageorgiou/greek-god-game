@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Orbitron&display=swap');
+
 body {
     background-color: #59C2D9;
+    color: black;
+    font-family: 'Caesar Dressing', cursive;
+    text-align: center;
 }
