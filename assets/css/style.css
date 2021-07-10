@@ -46,3 +46,28 @@ p{
     color: red;
     border-bottom: none;
 }
+
+#intro {
+    height: 75vh;
+    width: 100%;
+    background-color: inherit;
+    margin-top: 50px;
+}
+
+#intro-text {
+    background-color: #CACBA7;
+    height: 55vh;
+    width: 55vw;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+#intro-text h1 {
+    padding: 30px 10px;
+}
+
+#intro-text p {
+    margin: 0 50px;
+    background-color: #D7D8BB;
+    border-radius: 5%;
+}
