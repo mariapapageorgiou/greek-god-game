@@ -17,9 +17,13 @@ p{
 }
 
 /* ================================================= NAVIGATION ================================================= */
+
 #navigation {
     line-height: 100px;
     font-size:175%;
+    color: lightgoldenrodyellow;
+    text-shadow: 3px 2px black;
+    letter-spacing: 1px;
 }
 
 .list-items {
@@ -38,7 +42,7 @@ a{
 }
 
 #navigation .active {
-    border-bottom: 3px solid black;
+    color: #ffcb90;
 }
 
 a:hover, #navigation a:hover {
@@ -56,30 +60,44 @@ a:hover, #navigation a:hover {
 }
 
 #intro-text {
-    background-color: #CACBA7;
+    background-color: #ffcb90;
     width: 55vw;
     border-radius: 50px;
     margin: 0 auto;
     padding-bottom: 50px;
+    box-shadow: 0px 0px 5px black;
 }
 
 #intro-text h1 {
     padding: 40px 25px;
+    text-shadow: 3px 2px #cea06c;
+    letter-spacing: 1px;
 }
 
 #intro-text p, #begin {
-    background-color: #D7D8BB;
+    background-color: lightgoldenrodyellow;
     border-radius: 50px;
     margin: 0 50px 50px;
     padding: 25px;
     text-align: justify;
     line-height: 150%;
+    box-shadow: 0px 0px 10px black;
 }
 
 #begin {
     font-size: 225%;
     padding: 10px 50px;
     margin: 0 auto;
+    letter-spacing: 1px;
+    text-shadow: 2px 1px #cea06c;
+}
+
+#begin:hover {
+    background-color: black;
+    color:lightgoldenrodyellow;
+    transition-duration: 2000ms;
+    font-weight: lighter;
+    text-shadow: none;
 }
 
 /* ================================================= FOOTER ================================================= */
@@ -88,9 +106,10 @@ footer {
     width: 55vw;
     font-size: 110%;
     line-height: 50px;
-    background-color: #CACBA7;
+    background-color: #ffcb90;
     margin: 0 auto;
     border-radius: 50px;
+    box-shadow: 0px 0px 5px black;
 }
 
 #footer-ul {
@@ -136,9 +155,7 @@ footer {
 }
 
 .fa-github:hover{
-    background-color: black;
     color: white;
-    border-radius: 50%;
 }
 
 /* ================================================= MEDIA QUERIES ================================================= */
