@@ -55,9 +55,9 @@ a:hover,
 /* ================================================= INTRO HOME PAGE ================================================= */
 
 #intro {
-    height: 80vh;
     width: 100%;
     background-color: inherit;
+    margin-bottom: 70px;
 }
 
 #intro-text {
@@ -110,7 +110,7 @@ footer {
     font-size: 110%;
     line-height: 50px;
     background-color: #ffcb90;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     border-radius: 50px;
     box-shadow: 0px 0px 5px black;
 }
@@ -165,11 +165,11 @@ footer {
 
 .modal {
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     padding: 125px 0;
     width: 100%;
-    height: 100%;
+    height: 800px;
     background-color: rgba(0, 0, 0, 0.3);
     overflow: auto;
 }
@@ -194,9 +194,7 @@ footer {
     font-size: 150%;
     color: black;
     float: right;
-    /* font-size: 28px;
-    font-weight: bold; */
-    padding: 25px 50px 0 0;
+    padding: 20px 30px 0 0;
 }
 
 .close:hover,
@@ -217,6 +215,35 @@ footer {
         width: 70vw;
     }
 
+    #intro-text {
+        padding-bottom: 30px;
+    }
+
+    #navigation {
+        line-height: 75px;
+        font-size: 150%;
+    }
+
+    #intro-text h1, .rules-content h1 {
+        padding: 30px 25px;
+    }
+
+    #intro-text p {
+        margin-bottom: 30px;
+
+    }
+
+    #begin {
+        padding: 5px 50px;
+    }
+
+    .rules-content {
+        width: 50vw;
+    }
+
+    footer {
+        line-height: 30px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -242,6 +269,17 @@ footer {
 
     #intro-text p {
         margin: 0 25px 50px;
+    }
+
+    .rules-content {
+        width: 60vw;
+    }
+    .rules-content p {
+        padding: 0 25px 30px;
+    }
+
+    .close {
+        padding: 20px 25px 0 0;
     }
 }
 
@@ -325,6 +363,10 @@ footer {
 
     .list-items {
         display: block;
-        margin: 15px auto;
+        margin: 0 auto 15px;
+    }
+
+    .rules-content {
+        width: 70vw;
     }
 }
