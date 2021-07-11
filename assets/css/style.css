@@ -48,26 +48,32 @@ p{
 }
 
 #intro {
-    height: 75vh;
     width: 100%;
     background-color: inherit;
-    margin-top: 50px;
 }
 
 #intro-text {
     background-color: #CACBA7;
-    height: 55vh;
     width: 55vw;
-    border-radius: 5%;
+    border-radius: 50px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 #intro-text h1 {
-    padding: 30px 10px;
+    padding: 40px 25px;
 }
 
-#intro-text p {
-    margin: 0 50px;
+#intro-text p, #begin {
     background-color: #D7D8BB;
-    border-radius: 5%;
+    border-radius: 50px;
+    margin: 0 50px 50px;
+    padding: 25px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+#begin {
+    font-size: 225%;
+    padding: 10px 50px;
 }
