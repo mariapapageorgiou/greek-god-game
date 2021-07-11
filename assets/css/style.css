@@ -160,3 +160,44 @@ footer {
     }
 
 }
+
+/* ======================================= SCREEN SIZE 555px TO 375px (smaller tablet to mobile M) ======================================= */
+@media screen and (max-width:555px) {
+    body{
+        font-size: 95%;
+    }
+
+    #intro-text, footer {
+        width: 80vw;
+    }
+
+    #intro-text p {
+        margin: 0 25px 50px;
+    }
+}
+
+@media screen and (max-width:444px) {
+
+    body {
+        font-size: 85%;
+    }
+    #navigation {
+        line-height: 75px;
+    }
+
+    #intro-text, footer {
+        width: 90vw;
+    }
+
+    #intro-text{
+        padding-bottom: 25px;
+    }
+
+    #intro-text h1 {
+        padding: 25px 25px;
+    }
+
+    #intro-text p {
+        margin: 0 25px 25px;
+    }
+}
