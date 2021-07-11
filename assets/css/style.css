@@ -79,6 +79,7 @@ a:hover, #navigation a:hover {
 #begin {
     font-size: 225%;
     padding: 10px 50px;
+    margin: 0 auto;
 }
 
 /* ================================================= FOOTER ================================================= */
@@ -138,4 +139,24 @@ footer {
     background-color: black;
     color: white;
     border-radius: 50%;
+}
+
+/* ================================================= MEDIA QUERIES ================================================= */
+
+/* ======================================= SCREEN SIZE 1024px TO 768px (laptop to tablet) ======================================= */
+@media screen and (max-width:1024px){
+    
+    #intro-text, footer {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    #intro, footer {
+        height: auto;
+        margin-bottom: 50px;
+    }
+
 }
