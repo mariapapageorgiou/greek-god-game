@@ -80,3 +80,62 @@ a:hover, #navigation a:hover {
     font-size: 225%;
     padding: 10px 50px;
 }
+
+/* ================================================= FOOTER ================================================= */
+
+footer {
+    width: 55vw;
+    font-size: 110%;
+    line-height: 50px;
+    background-color: #CACBA7;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+#footer-ul {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.list-items-footer li {
+    float: left;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+#feedback {
+    width: 33%;
+    float: right;
+    text-align: right;
+}
+
+#feedback a {
+    margin-right: 15px;
+}
+
+#copyrights{
+    width: 33%;
+    font-size: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fa {
+    font-size: 150%;
+    width: 20px;
+}
+
+.fa-facebook:hover {
+    color: #3B5998;
+}
+
+.fa-instagram:hover {
+    color: #b73bff;
+}
+
+.fa-github:hover{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
