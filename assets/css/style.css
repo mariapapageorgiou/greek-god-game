@@ -78,7 +78,7 @@ a:hover,
 }
 
 #intro-text p,
-#begin{
+#begin, #btn-choices button {
     background-color: lightgoldenrodyellow;
     border-radius: 50px;
     margin: 0 50px 50px;
@@ -88,7 +88,7 @@ a:hover,
     box-shadow: 0px 0px 10px black;
 }
 
-#begin{
+#begin, #btn-choices button {
     font-size: 225%;
     padding: 10px 50px;
     margin: 0 auto;
@@ -96,7 +96,7 @@ a:hover,
     text-shadow: 2px 1px #cea06c;
 }
 
-#begin:hover{
+#begin:hover, #btn-choices button:hover {
     background-color: black;
     color: lightgoldenrodyellow;
     transition-duration: 2000ms;
@@ -204,6 +204,82 @@ footer {
     color: red;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* ================================================= CHOICES ================================================= */
+
+#choices {
+    width: 100%;
+    height: 500px;
+    font-size:150%;
+}
+
+#categoryColor,
+#categorySeason,
+#categorySense,
+#categoryContinent,
+#categoryAnimal,
+#blue,
+#yellow1,
+#yellow2,
+#red,
+#winter,
+#spring1,
+#spring2,
+#summer1,
+#summer2,
+#fall,
+#sight,
+#sound1,
+#sound2,
+#smell1,
+#smell2,
+#taste1,
+#taste2,
+#touch,
+#antarctica,
+#oceania1,
+#oceania2,
+#asia1,
+#asia2,
+#europe1,
+#europe2,
+#americas1,
+#americas2,
+#africa,
+#dolphin,
+#stork,
+#eagle,
+#boar,
+#mouse,
+#peacock,
+#owl,
+#pig,
+#horse,
+#swan,
+#serpent,
+#donkey
+    {
+    display: none;
+}
+
+#heading-choices {
+    padding: 20px 0 40px;
+}
+
+#btn-choices button {
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 150%;
+    padding: 5px 30px;
+}
+
+#btn-choices p {
+    padding: 30px;
+}
+
+#timer {
+    padding: 40px;
+    font-size: 300%;
 }
 
 /* ================================================= MEDIA QUERIES ================================================= */
