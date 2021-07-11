@@ -12,7 +12,7 @@ body {
     text-align: center;
 }
 
-p{
+p {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -20,15 +20,15 @@ p{
 
 #navigation {
     line-height: 100px;
-    font-size:175%;
+    font-size: 175%;
     color: lightgoldenrodyellow;
     text-shadow: 3px 2px black;
     letter-spacing: 1px;
 }
 
 .list-items {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 .list-items li {
@@ -36,7 +36,7 @@ p{
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -45,7 +45,8 @@ a{
     color: #ffcb90;
 }
 
-a:hover, #navigation a:hover {
+a:hover,
+#navigation a:hover {
     font-weight: bolder;
     color: red;
     border-bottom: none;
@@ -74,7 +75,8 @@ a:hover, #navigation a:hover {
     letter-spacing: 1px;
 }
 
-#intro-text p, #begin {
+#intro-text p,
+#begin {
     background-color: lightgoldenrodyellow;
     border-radius: 50px;
     margin: 0 50px 50px;
@@ -94,7 +96,7 @@ a:hover, #navigation a:hover {
 
 #begin:hover {
     background-color: black;
-    color:lightgoldenrodyellow;
+    color: lightgoldenrodyellow;
     transition-duration: 2000ms;
     font-weight: lighter;
     text-shadow: none;
@@ -134,7 +136,7 @@ footer {
     margin-right: 15px;
 }
 
-#copyrights{
+#copyrights {
     width: 33%;
     font-size: 50%;
     margin: 0 auto;
@@ -154,24 +156,38 @@ footer {
     color: #b73bff;
 }
 
-.fa-github:hover{
+.fa-github:hover {
     color: white;
+}
+
+/* ================================================= RULES & FEEDBACK MODALS ================================================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* ================================================= MEDIA QUERIES ================================================= */
 
 /* ======================================= SCREEN SIZE 1024px TO 768px (laptop to tablet) ======================================= */
-@media screen and (max-width:1024px){
-    
-    #intro-text, footer {
+@media screen and (max-width:1024px) {
+
+    #intro-text,
+    footer {
         width: 70vw;
     }
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    #intro, footer {
+    #intro,
+    footer {
         height: auto;
         margin-bottom: 50px;
     }
@@ -180,11 +196,12 @@ footer {
 
 /* ======================================= SCREEN SIZE 555px TO 375px (smaller tablet to mobile M) ======================================= */
 @media screen and (max-width:555px) {
-    body{
+    body {
         font-size: 95%;
     }
 
-    #intro-text, footer {
+    #intro-text,
+    footer {
         width: 80vw;
     }
 
@@ -198,15 +215,17 @@ footer {
     body {
         font-size: 85%;
     }
+
     #navigation {
         line-height: 75px;
     }
 
-    #intro-text, footer {
+    #intro-text,
+    footer {
         width: 90vw;
     }
 
-    #intro-text{
+    #intro-text {
         padding-bottom: 25px;
     }
 
@@ -220,7 +239,7 @@ footer {
 }
 
 /* ======================================= SCREEN SIZE 375px AND BELOW (mobile M and smaller) ======================================= */
-@media screen and (max-width:375px){
+@media screen and (max-width:375px) {
 
     footer {
         width: 55vw;
@@ -228,7 +247,9 @@ footer {
         border-radius: 30px;
     }
 
-    #footer-ul, #feedback, #copyrights {
+    #footer-ul,
+    #feedback,
+    #copyrights {
         width: 100%;
         padding: 0;
         margin: 0 auto;
@@ -242,7 +263,7 @@ footer {
     }
 
     #feedback a {
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
 
