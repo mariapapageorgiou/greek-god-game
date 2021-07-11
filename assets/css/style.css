@@ -201,3 +201,57 @@ footer {
         margin: 0 25px 25px;
     }
 }
+
+/* ======================================= SCREEN SIZE 375px AND BELOW (mobile M and smaller) ======================================= */
+@media screen and (max-width:375px){
+
+    footer {
+        width: 55vw;
+        line-height: 30px;
+        border-radius: 30px;
+    }
+
+    #footer-ul, #feedback, #copyrights {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .list-items-footer li {
+        float: none;
+        display: inline;
+        margin: 0 auto;
+    }
+
+    #feedback a {
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    body {
+        font-size: 75%;
+    }
+
+    .list-items li {
+        margin: 0 15px;
+    }
+
+    #intro-text p {
+        margin: 0 15px 25px;
+    }
+}
+
+@media screen and (max-width:290px) {
+
+    #navigation {
+        line-height: 40px;
+    }
+
+    .list-items {
+        display: block;
+        margin: 15px auto;
+    }
+}
