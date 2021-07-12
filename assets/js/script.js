@@ -245,3 +245,78 @@ touchBtn.onclick = function() {
   africaBtn.style.display = "block";
   continentSpan.style.display = "inline";
 }
+
+// ==================== CONTINENT EVENT ====================
+antarcticaBtn.onclick = function() {
+  antarcticaBtn.style.display = "none";
+  oceaniaTwoBtn.style.display = "none";
+  continentSpan.style.display = "none";
+  dolphin.style.display = "block";
+  stork.style.display = "block";
+  animalSpan.style.display = "inline";
+}
+
+function oceania() {
+  antarcticaBtn.style.display = "none";
+  oceaniaTwoBtn.style.display = "none";
+  oceaniaOneBtn.style.display = "none";
+  asiaTwoBtn.style.display = "none";
+  continentSpan.style.display = "none";
+  eagle.style.display = "block";
+  boar.style.display = "block";
+  animalSpan.style.display = "inline";
+}
+
+oceaniaOneBtn.addEventListener('click', oceania);
+oceaniaTwoBtn.addEventListener('click', oceania);
+
+function asia() {
+  oceaniaOneBtn.style.display = "none";
+  asiaTwoBtn.style.display = "none";
+  asiaOneBtn.style.display = "none";
+  europeTwoBtn.style.display = "none";
+  continentSpan.style.display = "none";
+  mouse.style.display = "block";
+  peacock.style.display = "block";
+  animalSpan.style.display = "inline";
+}
+
+asiaOneBtn.addEventListener('click', asia);
+asiaTwoBtn.addEventListener('click', asia);
+
+function europe() {
+  asiaOneBtn.style.display = "none";
+  europeTwoBtn.style.display = "none";
+  europeOneBtn.style.display = "none";
+  americasTwoBtn.style.display = "none";
+  continentSpan.style.display = "none";
+  owl.style.display = "block";
+  pig.style.display = "block";
+  animalSpan.style.display = "inline";
+}
+
+europeOneBtn.addEventListener('click', europe);
+europeTwoBtn.addEventListener('click', europe);
+
+function americas() {
+  europeOneBtn.style.display = "none";
+  americasTwoBtn.style.display = "none";
+  americasOneBtn.style.display = "none";
+  africaBtn.style.display = "none";
+  continentSpan.style.display = "none";
+  horse.style.display = "block";
+  swan.style.display = "block";
+  animalSpan.style.display = "inline";
+}
+
+americasOneBtn.addEventListener('click', americas);
+americasTwoBtn.addEventListener('click', americas);
+
+africaBtn.onclick = function() {
+  americasOneBtn.style.display = "none";
+  africaBtn.style.display = "none";
+  continentSpan.style.display = "none";
+  serpent.style.display = "block";
+  donkey.style.display = "block";
+  animalSpan.style.display = "inline";
+}
