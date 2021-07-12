@@ -42,6 +42,12 @@ function setEvent(eventName, setValue) {
   elementToset.style.display = setValue;
 }
 
+// ===================================== FUNCTION FOR REVEALING THE RESULT =====================================
+function godResult() {
+  document.getElementById("choices").style.display = "none";
+  document.getElementById("result").style.display = "block";
+}
+
 // ===================================== ELEMENT SELECTION EVENTS =====================================
 // ===================================== WATER BUTTON EVENT =====================================
 water.onclick = function () {
@@ -265,4 +271,11 @@ africa.onclick = function () {
     categoryAnimal: "inline"
   }
   changeDisplay(changeElements)
+}
+
+// ===================================== ANIMAL SELECTION EVENTS =====================================
+// ===================================== DOLPHIN BUTTON EVENT =====================================
+dolphin.onclick = function () {
+  godResult();
+  document.getElementById("poseidon").style.display = "block";
 }
