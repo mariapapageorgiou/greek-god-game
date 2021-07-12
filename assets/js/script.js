@@ -21,6 +21,9 @@ window.onclick = function (event) {
 
 // ===================================== GET ALL CHOICES BUTTONS =====================================
 
+let choicesDiv = document.getElementById("choices");
+let resultDiv = document.getElementById("result");
+
 // ==================== CATEGORY SPANS ====================
 let elementSpan = document.getElementById("categoryElement");
 let colorSpan = document.getElementById("categoryColor");
@@ -85,7 +88,6 @@ let swan = document.getElementById("swan");
 let serpent = document.getElementById("serpent");
 let donkey = document.getElementById("donkey");
 
-
 // ==================== ELEMENT EVENT ====================
 waterBtn.onclick = function () {
   waterBtn.style.display = "none";
@@ -106,7 +108,7 @@ fireBtn.onclick = function () {
 }
 
 // ==================== COLOR EVENT ====================
-blueBtn.onclick = function() {
+blueBtn.onclick = function () {
   blueBtn.style.display = "none";
   yellowTwoBtn.style.display = "none";
   colorSpan.style.display = "none";
@@ -129,7 +131,7 @@ function yellow() {
 yellowOneBtn.addEventListener('click', yellow);
 yellowTwoBtn.addEventListener('click', yellow);
 
-redBtn.onclick = function() {
+redBtn.onclick = function () {
   redBtn.style.display = "none";
   yellowOneBtn.style.display = "none";
   colorSpan.style.display = "none";
@@ -139,7 +141,7 @@ redBtn.onclick = function() {
 }
 
 // ==================== SEASON EVENT ====================
-winterBtn.onclick = function() {
+winterBtn.onclick = function () {
   winterBtn.style.display = "none";
   springTwoBtn.style.display = "none";
   seasonSpan.style.display = "none";
@@ -176,7 +178,7 @@ function summer() {
 summerOneBtn.addEventListener('click', summer);
 summerTwoBtn.addEventListener('click', summer);
 
-fallBtn.onclick = function() {
+fallBtn.onclick = function () {
   summerOneBtn.style.display = "none";
   fallBtn.style.display = "none";
   seasonSpan.style.display = "none";
@@ -186,7 +188,7 @@ fallBtn.onclick = function() {
 }
 
 // ==================== SENSE EVENT ====================
-sightBtn.onclick = function() {
+sightBtn.onclick = function () {
   sightBtn.style.display = "none";
   soundTwoBtn.style.display = "none";
   senseSpan.style.display = "none";
@@ -237,7 +239,7 @@ function taste() {
 tasteOneBtn.addEventListener('click', taste);
 tasteTwoBtn.addEventListener('click', taste);
 
-touchBtn.onclick = function() {
+touchBtn.onclick = function () {
   tasteOneBtn.style.display = "none";
   touchBtn.style.display = "none";
   senseSpan.style.display = "none";
@@ -247,7 +249,7 @@ touchBtn.onclick = function() {
 }
 
 // ==================== CONTINENT EVENT ====================
-antarcticaBtn.onclick = function() {
+antarcticaBtn.onclick = function () {
   antarcticaBtn.style.display = "none";
   oceaniaTwoBtn.style.display = "none";
   continentSpan.style.display = "none";
@@ -312,7 +314,7 @@ function americas() {
 americasOneBtn.addEventListener('click', americas);
 americasTwoBtn.addEventListener('click', americas);
 
-africaBtn.onclick = function() {
+africaBtn.onclick = function () {
   americasOneBtn.style.display = "none";
   africaBtn.style.display = "none";
   continentSpan.style.display = "none";
@@ -320,3 +322,95 @@ africaBtn.onclick = function() {
   donkey.style.display = "block";
   animalSpan.style.display = "inline";
 }
+
+// ==================== GOD RESULT ====================
+
+let poseidon = document.getElementById("poseidon");
+let hermes = document.getElementById("hermes");
+let zeus = document.getElementById("zeus");
+let ares = document.getElementById("ares");
+let apollo = document.getElementById("apollo");
+let hera = document.getElementById("hera");
+let athena = document.getElementById("athena");
+let demeter = document.getElementById("demeter");
+let artemis = document.getElementById("artemis");
+let aphrodite = document.getElementById("aphrodite");
+let hades = document.getElementById("hades");
+let hephaestus = document.getElementById("hephaestus");
+
+function godResult() {
+  choicesDiv.style.display = "none";
+  resultDiv.style.display = "block";
+}
+
+function godPoseidon() {
+  godResult();
+  poseidon.style.display = "block";
+}
+dolphin.addEventListener('click', godPoseidon);
+
+function godHermes() {
+  godResult();
+  hermes.style.display = "block";
+}
+stork.addEventListener('click', godHermes);
+
+function godZeus() {
+  godResult();
+  zeus.style.display = "block";
+}
+eagle.addEventListener('click', godZeus);
+
+function godAres() {
+  godResult();
+  ares.style.display = "block";
+}
+boar.addEventListener('click', godAres);
+
+function godApollo() {
+  godResult();
+  apollo.style.display = "block";
+}
+mouse.addEventListener('click', godApollo);
+
+function godHera() {
+  godResult();
+  hera.style.display = "block";
+}
+peacock.addEventListener('click', godHera);
+
+function godAthena() {
+  godResult();
+  athena.style.display = "block";
+}
+owl.addEventListener('click', godAthena);
+
+function godDemeter() {
+  godResult();
+  demeter.style.display = "block";
+}
+pig.addEventListener('click', godDemeter);
+
+function godArtemis() {
+  godResult();
+  artemis.style.display = "block";
+}
+horse.addEventListener('click', godArtemis);
+
+function godAphrodite() {
+  godResult();
+  aphrodite.style.display = "block";
+}
+swan.addEventListener('click', godAphrodite);
+
+function godHades() {
+  godResult();
+  hades.style.display = "block";
+}
+serpent.addEventListener('click', godHades);
+
+function godHephaestus() {
+  godResult();
+  hephaestus.style.display = "block";
+}
+donkey.addEventListener('click', godHephaestus);

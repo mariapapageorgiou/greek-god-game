@@ -206,9 +206,9 @@ footer {
     cursor: pointer;
 }
 
-/* ================================================= CHOICES ================================================= */
+/* ================================================= CHOICES & RESULTS ================================================= */
 
-#choices {
+#choices, #result {
     width: 100%;
     height: 500px;
     font-size:150%;
@@ -258,7 +258,20 @@ footer {
 #horse,
 #swan,
 #serpent,
-#donkey
+#donkey,
+#result,
+#poseidon,
+#hermes,
+#zeus,
+#ares,
+#apollo,
+#hera,
+#athena,
+#demeter,
+#artemis,
+#aphrodite,
+#hades,
+#hephaestus
     {
     display: none;
 }
@@ -281,6 +294,8 @@ footer {
     padding: 40px;
     font-size: 300%;
 }
+
+
 
 /* ================================================= MEDIA QUERIES ================================================= */
 
