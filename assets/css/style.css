@@ -208,10 +208,22 @@ footer {
 
 /* ================================================= CHOICES & RESULTS ================================================= */
 
-#choices, #result {
+#choices {
     width: 100%;
     height: 500px;
     font-size:150%;
+}
+
+#result {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+#result div {
+    width: 55vw;
+    margin: 0 auto;
+    padding: 20px 50px;
 }
 
 #categoryColor,
