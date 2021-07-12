@@ -102,3 +102,33 @@ fireBtn.onclick = function () {
   yellowOneBtn.style.display = "block";
   colorSpan.style.display = "inline";
 }
+
+blueBtn.onclick = function() {
+  blueBtn.style.display = "none";
+  yellowTwoBtn.style.display = "none";
+  colorSpan.style.display = "none";
+  winterBtn.style.display = "block";
+  springTwoBtn.style.display = "block";
+  seasonSpan.style.display = "inline";
+}
+
+function yellow() {
+  blueBtn.style.display = "none";
+  redBtn.style.display = "none";
+  yellowOneBtn.style.display = "none";
+  yellowTwoBtn.style.display = "none";
+  springOneBtn.style.display = "block";
+  summerTwoBtn.style.display = "block";
+}
+
+yellowOneBtn.addEventListener('click', yellow);
+yellowTwoBtn.addEventListener('click', yellow);
+
+redBtn.onclick = function() {
+  redBtn.style.display = "none";
+  yellowOneBtn.style.display = "none";
+  colorSpan.style.display = "none";
+  summerOneBtn.style.display = "block";
+  fallBtn.style.display = "block";
+  seasonSpan.style.display = "inline";
+}
