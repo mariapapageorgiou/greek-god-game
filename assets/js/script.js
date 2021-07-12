@@ -279,3 +279,69 @@ dolphin.onclick = function () {
   godResult();
   document.getElementById("poseidon").style.display = "block";
 }
+
+// ===================================== STORK BUTTON EVENT =====================================
+stork.onclick = function () {
+  godResult();
+  document.getElementById("hermes").style.display = "block";
+}
+
+// ===================================== EAGLE BUTTON EVENT =====================================
+eagle.onclick = function () {
+  godResult();
+  document.getElementById("zeus").style.display = "block";
+}
+
+// ===================================== BOAR BUTTON EVENT =====================================
+boar.onclick = function () {
+  godResult();
+  document.getElementById("ares").style.display = "block";
+}
+
+// ===================================== MOUSE BUTTON EVENT =====================================
+mouse.onclick = function () {
+  godResult();
+  document.getElementById("apollo").style.display = "block";
+}
+
+// ===================================== PEACOCK BUTTON EVENT =====================================
+peacock.onclick = function () {
+  godResult();
+  document.getElementById("hera").style.display = "block";
+}
+
+// ===================================== OWL BUTTON EVENT =====================================
+owl.onclick = function () {
+  godResult();
+  document.getElementById("athena").style.display = "block";
+}
+
+// ===================================== PIG BUTTON EVENT =====================================
+pig.onclick = function () {
+  godResult();
+  document.getElementById("demeter").style.display = "block";
+}
+
+// ===================================== HORSE BUTTON EVENT =====================================
+horse.onclick = function () {
+  godResult();
+  document.getElementById("artemis").style.display = "block";
+}
+
+// ===================================== SWAN BUTTON EVENT =====================================
+swan.onclick = function () {
+  godResult();
+  document.getElementById("aphrodite").style.display = "block";
+}
+
+// ===================================== SERPENT BUTTON EVENT =====================================
+serpent.onclick = function () {
+  godResult();
+  document.getElementById("hades").style.display = "block";
+}
+
+// ===================================== DONKEY BUTTON EVENT =====================================
+donkey.onclick = function () {
+  godResult();
+  document.getElementById("hephaestus").style.display = "block";
+}
