@@ -197,3 +197,72 @@ touch.onclick = function () {
   }
   changeDisplay(changeElements)
 }
+
+// ===================================== CONTINENT SELECTION EVENTS =====================================
+// ===================================== ANTARCTICA BUTTON EVENT =====================================
+antarctica.onclick = function () {
+  let changeElements = {
+    dolphin: "block",
+    stork: "block",
+    categoryAnimal: "inline"
+  }
+  changeDisplay(changeElements)
+}
+
+// ===================================== OCEANIA1 & OCEANIA2 BUTTONS EVENT =====================================
+function oceania() {
+  let changeElements = {
+    eagle: "block",
+    boar: "block",
+    categoryAnimal: "inline"
+  }
+  changeDisplay(changeElements);
+}
+oceania1.onclick = oceania;
+oceania2.onclick = oceania;
+
+// ===================================== ASIA1 & ASIA2 BUTTONS EVENT =====================================
+function asia() {
+  let changeElements = {
+    mouse: "block",
+    peacock: "block",
+    categoryAnimal: "inline"
+  }
+  changeDisplay(changeElements);
+}
+asia1.onclick = asia;
+asia2.onclick = asia;
+
+// ===================================== EUROPE1 & EUROPE2 BUTTONS EVENT =====================================
+function europe() {
+  let changeElements = {
+    owl: "block",
+    pig: "block",
+    categoryAnimal: "inline"
+  }
+  changeDisplay(changeElements);
+}
+europe1.onclick = europe;
+europe2.onclick = europe;
+
+// ===================================== AMERICAS1 & AMERICAS2 BUTTONS EVENT =====================================
+function americas() {
+  let changeElements = {
+    horse: "block",
+    swan: "block",
+    categoryAnimal: "inline"
+  }
+  changeDisplay(changeElements);
+}
+americas1.onclick = americas;
+americas2.onclick = americas;
+
+// ===================================== AFRICA BUTTON EVENT =====================================
+africa.onclick = function () {
+  let changeElements = {
+    serpent: "block",
+    donkey: "block",
+    categoryAnimal: "inline"
+  }
+  changeDisplay(changeElements)
+}
