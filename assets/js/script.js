@@ -42,6 +42,8 @@ function setEvent(eventName, setValue) {
   elementToset.style.display = setValue;
 }
 
+// ===================================== ELEMENT SELECTION EVENTS =====================================
+
 // ===================================== WATER BUTTON EVENT =====================================
 water.onclick = function () {
   let changeElements = {
@@ -62,6 +64,9 @@ fire.onclick = function () {
   changeDisplay(changeElements);
 }
 
+// ===================================== COLOR SELECTION EVENTS =====================================
+
+// ===================================== BLUE BUTTON EVENT =====================================
 blue.onclick = function () {
   let changeElements = {
     winter: "block",
@@ -71,6 +76,7 @@ blue.onclick = function () {
   changeDisplay(changeElements);
 }
 
+// ===================================== YELLOW1 & YELLOW2 BUTTONS EVENT =====================================
 function yellow() {
   let changeElements = { 
     spring1: "block",
@@ -83,6 +89,7 @@ function yellow() {
 yellow1.onclick = yellow;
 yellow2.onclick = yellow;
 
+// ===================================== RED BUTTON EVENT =====================================
 red.onclick = function() {
   let changeElements = {
     summer1: "block",
@@ -90,4 +97,52 @@ red.onclick = function() {
     categorySeason: "inline"
   }
   changeDisplay(changeElements);
+}
+
+// ===================================== SEASON SELECTION EVENTS =====================================
+
+// ===================================== WINTER BUTTON EVENT =====================================
+winter.onclick = function () {
+  let changeElements = {
+    sight: "block",
+    sound2: "block",
+    categorySense: "inline"
+  }
+  changeDisplay(changeElements)
+}
+
+// ===================================== SPRING1 & SPRING2 BUTTONS EVENT =====================================
+function spring() {
+  let changeElements = { 
+    sound1: "block",
+    smell2: "block",
+    categorySense: "inline"
+ }
+ changeDisplay(changeElements);
+}
+
+spring1.onclick = spring;
+spring2.onclick = spring;
+
+// ===================================== SUMMER1 & SUMMER2 BUTTONS EVENT =====================================
+function summer() {
+  let changeElements = { 
+    smell1: "block",
+    taste2: "block",
+    categorySense: "inline"
+ }
+ changeDisplay(changeElements);
+}
+
+summer1.onclick = summer;
+summer2.onclick = summer;
+
+// ===================================== FALL BUTTON EVENT =====================================
+fall.onclick = function () {
+  let changeElements = {
+    taste1: "block",
+    touch: "block",
+    categorySense: "inline"
+  }
+  changeDisplay(changeElements)
 }
