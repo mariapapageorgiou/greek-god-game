@@ -3,18 +3,41 @@
 let modal = document.getElementById("rulesModal");
 let rulesBtn = document.getElementById("rulesBtn");
 
-rulesBtn.onclick = function() {
-    modal.style.display = "block";
+rulesBtn.onclick = function () {
+  modal.style.display = "block";
 }
 
 let closeSpan = document.getElementsByClassName("close")[0];
 
-closeSpan.onclick = function() {
+closeSpan.onclick = function () {
   modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+// ===================================== GET ALL CHOICES BUTTONS =====================================
+
+let waterBtn = document.getElementById("water");
+let fireBtn = document.getElementById("fire");
+let blueBtn = document.getElementById("blue");
+let yellowOneBtn = document.getElementById("yellow1");
+let yellowTwoBtn = document.getElementById("yellow2");
+let redBtn = document.getElementById("red");
+
+waterBtn.onclick = function () {
+  waterBtn.style.display = "none";
+  fireBtn.style.display = "none";
+  blueBtn.style.display = "block";
+  yellowTwoBtn.style.display = "block";
+}
+
+fireBtn.onclick = function () {
+  waterBtn.style.display = "none";
+  fireBtn.style.display = "none";
+  redBtn.style.display = "block";
+  yellowOneBtn.style.display = "block";
 }
