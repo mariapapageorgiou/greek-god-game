@@ -43,7 +43,6 @@ function setEvent(eventName, setValue) {
 }
 
 // ===================================== ELEMENT SELECTION EVENTS =====================================
-
 // ===================================== WATER BUTTON EVENT =====================================
 water.onclick = function () {
   let changeElements = {
@@ -65,7 +64,6 @@ fire.onclick = function () {
 }
 
 // ===================================== COLOR SELECTION EVENTS =====================================
-
 // ===================================== BLUE BUTTON EVENT =====================================
 blue.onclick = function () {
   let changeElements = {
@@ -78,19 +76,18 @@ blue.onclick = function () {
 
 // ===================================== YELLOW1 & YELLOW2 BUTTONS EVENT =====================================
 function yellow() {
-  let changeElements = { 
+  let changeElements = {
     spring1: "block",
     summer2: "block",
     categorySeason: "inline"
- }
- changeDisplay(changeElements);
+  }
+  changeDisplay(changeElements);
 }
-
 yellow1.onclick = yellow;
 yellow2.onclick = yellow;
 
 // ===================================== RED BUTTON EVENT =====================================
-red.onclick = function() {
+red.onclick = function () {
   let changeElements = {
     summer1: "block",
     fall: "block",
@@ -100,7 +97,6 @@ red.onclick = function() {
 }
 
 // ===================================== SEASON SELECTION EVENTS =====================================
-
 // ===================================== WINTER BUTTON EVENT =====================================
 winter.onclick = function () {
   let changeElements = {
@@ -113,27 +109,25 @@ winter.onclick = function () {
 
 // ===================================== SPRING1 & SPRING2 BUTTONS EVENT =====================================
 function spring() {
-  let changeElements = { 
+  let changeElements = {
     sound1: "block",
     smell2: "block",
     categorySense: "inline"
- }
- changeDisplay(changeElements);
+  }
+  changeDisplay(changeElements);
 }
-
 spring1.onclick = spring;
 spring2.onclick = spring;
 
 // ===================================== SUMMER1 & SUMMER2 BUTTONS EVENT =====================================
 function summer() {
-  let changeElements = { 
+  let changeElements = {
     smell1: "block",
     taste2: "block",
     categorySense: "inline"
- }
- changeDisplay(changeElements);
+  }
+  changeDisplay(changeElements);
 }
-
 summer1.onclick = summer;
 summer2.onclick = summer;
 
@@ -143,6 +137,63 @@ fall.onclick = function () {
     taste1: "block",
     touch: "block",
     categorySense: "inline"
+  }
+  changeDisplay(changeElements)
+}
+
+// ===================================== SENSE SELECTION EVENTS =====================================
+// ===================================== SIGHT BUTTON EVENT =====================================
+sight.onclick = function () {
+  let changeElements = {
+    antarctica: "block",
+    oceania2: "block",
+    categoryContinent: "inline"
+  }
+  changeDisplay(changeElements)
+}
+
+// ===================================== SOUND1 & SOUND2 BUTTONS EVENT =====================================
+function sound() {
+  let changeElements = {
+    oceania1: "block",
+    asia2: "block",
+    categoryContinent: "inline"
+  }
+  changeDisplay(changeElements);
+}
+sound1.onclick = sound;
+sound2.onclick = sound;
+
+// ===================================== SMELL1 & SMELL2 BUTTONS EVENT =====================================
+function smell() {
+  let changeElements = {
+    asia1: "block",
+    europe2: "block",
+    categoryContinent: "inline"
+  }
+  changeDisplay(changeElements);
+}
+smell1.onclick = smell;
+smell2.onclick = smell;
+
+// ===================================== TASTE1 & TASTE2 BUTTONS EVENT =====================================
+function taste() {
+  let changeElements = {
+    europe1: "block",
+    americas2: "block",
+    categoryContinent: "inline"
+  }
+  changeDisplay(changeElements);
+}
+taste1.onclick = taste;
+taste2.onclick = taste;
+
+// ===================================== TOUCH BUTTON EVENT =====================================
+touch.onclick = function () {
+  let changeElements = {
+    americas1: "block",
+    africa: "block",
+    categoryContinent: "inline"
   }
   changeDisplay(changeElements)
 }
