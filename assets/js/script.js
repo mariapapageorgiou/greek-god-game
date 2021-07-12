@@ -29,7 +29,7 @@ function changeDisplay(changeElements) {
 
 // ===================================== FUNCTION TO SET ALL REQUIRED ELEMENTS TO NONE =====================================
 function setAllElementsNone() {
-  const allElements = ["water", "fire", "blue", "yellow1", "yellow2", "red", "winter", "spring1", "spring2", "summer1", "summer2", "fall", "sight", "sound1", "sound2", "smell1", "smell2", "taste1", "taste2", "touch", "antarctica", "oceania1", "oceania2", "asia1", "asia2", "europe1", "europe2", "americas1", "americas2", "africa", "dolphin", "stork", "eagle", "boar", "mouse", "peacock", "owl", "pig", "horse", "swan", "serpent", "donkey"];
+  const allElements = ["categoryElement", "categoryColor", "categorySeason", "categorySense", "categoryContinent", "categoryAnimal", "water", "fire", "blue", "yellow1", "yellow2", "red", "winter", "spring1", "spring2", "summer1", "summer2", "fall", "sight", "sound1", "sound2", "smell1", "smell2", "taste1", "taste2", "touch", "antarctica", "oceania1", "oceania2", "asia1", "asia2", "europe1", "europe2", "americas1", "americas2", "africa", "dolphin", "stork", "eagle", "boar", "mouse", "peacock", "owl", "pig", "horse", "swan", "serpent", "donkey"];
   allElements.forEach(function (eachElement) {
     const elementToset = document.getElementById(eachElement);
     elementToset.style.display = "none";
