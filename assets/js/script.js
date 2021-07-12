@@ -61,3 +61,33 @@ fire.onclick = function () {
   };
   changeDisplay(changeElements);
 }
+
+blue.onclick = function () {
+  let changeElements = {
+    winter: "block",
+    spring2: "block",
+    categorySeason: "inline"
+  }
+  changeDisplay(changeElements);
+}
+
+function yellow() {
+  let changeElements = { 
+    spring1: "block",
+    summer2: "block",
+    categorySeason: "inline"
+ }
+ changeDisplay(changeElements);
+}
+
+yellow1.onclick = yellow;
+yellow2.onclick = yellow;
+
+red.onclick = function() {
+  let changeElements = {
+    summer1: "block",
+    fall: "block",
+    categorySeason: "inline"
+  }
+  changeDisplay(changeElements);
+}
