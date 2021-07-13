@@ -12,7 +12,7 @@ body {
     text-align: center;
 }
 
-p {
+p, h6 {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -57,7 +57,7 @@ a:hover,
 #intro {
     width: 100%;
     background-color: inherit;
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 
 #intro-text {
@@ -78,25 +78,32 @@ a:hover,
 }
 
 #intro-text p,
-#begin, #btn-choices button, #try-again {
+#begin,
+#btn-choices button,
+#try-again {
     background-color: lightgoldenrodyellow;
     border-radius: 50px;
-    margin: 0 50px 50px;
-    padding: 25px;
     text-align: justify;
     line-height: 150%;
     box-shadow: 0px 0px 10px black;
 }
 
-#begin, #btn-choices button, #try-again {
-    font-size: 225%;
-    padding: 10px 50px;
+#begin,
+#btn-choices button,
+#try-again {
     margin: 0 auto;
     letter-spacing: 1px;
     text-shadow: 2px 1px #cea06c;
 }
 
-#begin:hover, #btn-choices button:hover, #try-again:hover {
+#try-again {
+ font-size: 225%;
+    padding: 10px 50px; 
+}
+
+#begin:hover,
+#btn-choices button:hover,
+#try-again:hover {
     background-color: black;
     color: lightgoldenrodyellow;
     transition-duration: 2000ms;
@@ -107,7 +114,10 @@ a:hover,
 /* ================================================= FOOTER ================================================= */
 
 footer {
-    width: 55vw;
+    width: 56%;
+    position: fixed;
+    bottom: 0;
+    left: 22%;
     font-size: 110%;
     line-height: 50px;
     background-color: #ffcb90;
@@ -210,20 +220,20 @@ footer {
 
 #choices {
     width: 100%;
-    height: 500px;
-    font-size:150%;
+    height: 600px;
+    font-size: 150%;
 }
 
 #result {
     width: 100%;
     height: fit-content;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 #result div {
-    width: 55vw;
+    width: 50%;
     margin: 0 auto;
-    padding: 20px 50px;
+    padding: 0 0 50px;
 }
 
 #categoryColor,
@@ -283,8 +293,7 @@ footer {
 #artemis,
 #aphrodite,
 #hades,
-#hephaestus
-    {
+#hephaestus {
     display: none;
 }
 
@@ -314,9 +323,14 @@ footer {
 /* ======================================= SCREEN SIZE 1024px TO 768px (laptop to tablet) ======================================= */
 @media screen and (max-width:1024px) {
 
-    #intro-text,
-    footer {
+    #intro-text {
         width: 70vw;
+    }
+
+    footer {
+        width: 70%;
+        left: 15%;
+        line-height: 30px;
     }
 
     #intro-text {
@@ -346,133 +360,127 @@ footer {
         width: 50vw;
     }
 
-    footer {
-        line-height: 30px;
+    #choices {
+        font-size: 125%;
     }
 }
 
+/* ======================================= SCREEN SIZE 768px TO 556px (tablet) ======================================= */
 @media screen and (max-width:768px) {
 
-    #intro,
-    footer {
-        height: auto;
-        margin-bottom: 50px;
+    #choices {
+        height: 500px;
     }
 
-}
-
-/* ======================================= SCREEN SIZE 555px TO 375px (smaller tablet to mobile M) ======================================= */
-@media screen and (max-width:555px) {
-    body {
-        font-size: 95%;
+    #heading-choices {
+        padding: 0 0 20px;
     }
 
-    #intro-text,
-    footer {
-        width: 80vw;
+    #btn-choices p {
+        padding: 15px;
     }
 
-    #intro-text p {
-        margin: 0 25px 50px;
+    #timer {
+        padding: 15px;
+        font-size: 250%;
     }
 
-    .rules-content {
-        width: 60vw;
+    /* ======================================= SCREEN SIZE 555px TO 375px (smaller tablet to mobile M) ======================================= */
+    @media screen and (max-width:555px) {
+        body {
+            font-size: 95%;
+        }
+
+        #intro-text {
+            width: 80vw;
+        }
+
+        #intro-text p {
+            margin: 0 25px 50px;
+        }
+
+        footer {
+            width: 80%;
+            left: 10%;
+        }
+
+        .rules-content {
+            width: 60vw;
+        }
+
+        .rules-content p {
+            padding: 0 25px 30px;
+        }
+
+        .close {
+            padding: 20px 25px 0 0;
+        }
     }
 
-    .rules-content p {
-        padding: 0 25px 30px;
+    @media screen and (max-width:444px) {
+
+        body {
+            font-size: 85%;
+        }
     }
 
-    .close {
-        padding: 20px 25px 0 0;
-    }
-}
+    /* ======================================= SCREEN SIZE 375px AND BELOW (mobile M and smaller) ======================================= */
+    @media screen and (max-width:395px) {
 
-@media screen and (max-width:444px) {
+        footer {
+            width: 50%;
+            left: 25%;
+            line-height: 30px;
+            border-radius: 30px;
+        }
 
-    body {
-        font-size: 85%;
-    }
+        #footer-ul,
+        #feedback,
+        #copyrights {
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-    #navigation {
-        line-height: 75px;
-    }
+        .list-items-footer li {
+            float: none;
+            display: inline;
+            margin: 0 auto;
+        }
 
-    #intro-text,
-    footer {
-        width: 90vw;
-    }
-
-    #intro-text {
-        padding-bottom: 25px;
-    }
-
-    #intro-text h1 {
-        padding: 25px 25px;
-    }
-
-    #intro-text p {
-        margin: 0 25px 25px;
-    }
-}
-
-/* ======================================= SCREEN SIZE 375px AND BELOW (mobile M and smaller) ======================================= */
-@media screen and (max-width:375px) {
-
-    footer {
-        width: 55vw;
-        line-height: 30px;
-        border-radius: 30px;
+        #feedback a {
+            margin: 0 auto;
+        }
     }
 
-    #footer-ul,
-    #feedback,
-    #copyrights {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
+    @media screen and (max-width:320px) {
+
+        body {
+            font-size: 75%;
+        }
+
+        .list-items li {
+            margin: 0 15px;
+        }
+
+        #intro-text p {
+            margin: 0 15px 25px;
+        }
     }
 
-    .list-items-footer li {
-        float: none;
-        display: inline;
-        margin: 0 auto;
+    @media screen and (max-width:290px) {
+
+        #navigation {
+            line-height: 40px;
+        }
+
+        .list-items {
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        .rules-content {
+            width: 70vw;
+        }
     }
-
-    #feedback a {
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width:320px) {
-
-    body {
-        font-size: 75%;
-    }
-
-    .list-items li {
-        margin: 0 15px;
-    }
-
-    #intro-text p {
-        margin: 0 15px 25px;
-    }
-}
-
-@media screen and (max-width:290px) {
-
-    #navigation {
-        line-height: 40px;
-    }
-
-    .list-items {
-        display: block;
-        margin: 0 auto 15px;
-    }
-
-    .rules-content {
-        width: 70vw;
-    }
-}
