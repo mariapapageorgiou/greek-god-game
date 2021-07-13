@@ -21,7 +21,8 @@ window.onclick = function (event) {
 
 // ===================================== TIMER =====================================
 
-let timeLeft = 15;
+let timeLeft = 5;
+var myVar;
 
 function countdown() {
   timeLeft--;
@@ -41,11 +42,16 @@ function countdown() {
       timeCount.style.color = "red";
     }
 
-    setTimeout(countdown, 1000);
+    myVar = setTimeout(countdown, 1000);
   }
 };
 
 setTimeout(countdown, 1000);
+
+function stopTimer() {
+  clearTimeout(myVar);
+  document.getElementById("restart-div").style.display = "none";
+}
 
 // ===================================== FUNCTION FOR CHANGING THE DISPLAY =====================================
 function changeDisplay(changeElements) {
@@ -304,72 +310,84 @@ africa.onclick = function () {
 // ===================================== ANIMAL SELECTION EVENTS =====================================
 // ===================================== DOLPHIN BUTTON EVENT =====================================
 dolphin.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("poseidon").style.display = "block";
 }
 
 // ===================================== STORK BUTTON EVENT =====================================
 stork.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("hermes").style.display = "block";
 }
 
 // ===================================== EAGLE BUTTON EVENT =====================================
 eagle.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("zeus").style.display = "block";
 }
 
 // ===================================== BOAR BUTTON EVENT =====================================
 boar.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("ares").style.display = "block";
 }
 
 // ===================================== MOUSE BUTTON EVENT =====================================
 mouse.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("apollo").style.display = "block";
 }
 
 // ===================================== PEACOCK BUTTON EVENT =====================================
 peacock.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("hera").style.display = "block";
 }
 
 // ===================================== OWL BUTTON EVENT =====================================
 owl.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("athena").style.display = "block";
 }
 
 // ===================================== PIG BUTTON EVENT =====================================
 pig.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("demeter").style.display = "block";
 }
 
 // ===================================== HORSE BUTTON EVENT =====================================
 horse.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("artemis").style.display = "block";
 }
 
 // ===================================== SWAN BUTTON EVENT =====================================
 swan.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("aphrodite").style.display = "block";
 }
 
 // ===================================== SERPENT BUTTON EVENT =====================================
 serpent.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("hades").style.display = "block";
 }
 
 // ===================================== DONKEY BUTTON EVENT =====================================
 donkey.onclick = function () {
+  stopTimer();
   godResult();
   document.getElementById("hephaestus").style.display = "block";
 }
