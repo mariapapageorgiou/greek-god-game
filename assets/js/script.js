@@ -5,19 +5,19 @@ let guideBtn = document.getElementById("guideBtn");
 
 guideBtn.onclick = function () {
   modal.style.display = "block";
-}
+};
 
 let closeSpan = document.getElementsByClassName("close")[0];
 
 closeSpan.onclick = function () {
   modal.style.display = "none";
-}
+};
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 // ===================================== TIMER =====================================
 
@@ -44,7 +44,7 @@ function countdown() {
 
     myVar = setTimeout(countdown, 1000);
   }
-};
+}
 
 setTimeout(countdown, 1000);
 
@@ -57,8 +57,8 @@ function stopTimer() {
 function changeDisplay(changeElements) {
   setAllElementsNone();
   for (const property in changeElements) {
-    setEvent(property, changeElements[property])
-  };
+    setEvent(property, changeElements[property]);
+  }
 }
 
 // ===================================== FUNCTION TO SET ALL REQUIRED ELEMENTS TO NONE =====================================
@@ -91,7 +91,7 @@ water.onclick = function () {
     categoryColor: "inline"
   };
   changeDisplay(changeElements);
-}
+};
 
 // ===================================== FIRE BUTTON EVENT =====================================
 fire.onclick = function () {
@@ -101,7 +101,7 @@ fire.onclick = function () {
     categoryColor: "inline"
   };
   changeDisplay(changeElements);
-}
+};
 
 // ===================================== COLOR SELECTION EVENTS =====================================
 // ===================================== BLUE BUTTON EVENT =====================================
@@ -110,9 +110,9 @@ blue.onclick = function () {
     winter: "block",
     spring2: "block",
     categorySeason: "inline"
-  }
+  };
   changeDisplay(changeElements);
-}
+};
 
 // ===================================== YELLOW1 & YELLOW2 BUTTONS EVENT =====================================
 function yellow() {
@@ -120,7 +120,7 @@ function yellow() {
     spring1: "block",
     summer2: "block",
     categorySeason: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 yellow1.onclick = yellow;
@@ -132,9 +132,9 @@ red.onclick = function () {
     summer1: "block",
     fall: "block",
     categorySeason: "inline"
-  }
+  };
   changeDisplay(changeElements);
-}
+};
 
 // ===================================== SEASON SELECTION EVENTS =====================================
 // ===================================== WINTER BUTTON EVENT =====================================
@@ -143,9 +143,9 @@ winter.onclick = function () {
     sight: "block",
     sound2: "block",
     categorySense: "inline"
-  }
-  changeDisplay(changeElements)
-}
+  };
+  changeDisplay(changeElements);
+};
 
 // ===================================== SPRING1 & SPRING2 BUTTONS EVENT =====================================
 function spring() {
@@ -153,7 +153,7 @@ function spring() {
     sound1: "block",
     smell2: "block",
     categorySense: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 spring1.onclick = spring;
@@ -165,7 +165,7 @@ function summer() {
     smell1: "block",
     taste2: "block",
     categorySense: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 summer1.onclick = summer;
@@ -177,9 +177,9 @@ fall.onclick = function () {
     taste1: "block",
     touch: "block",
     categorySense: "inline"
-  }
-  changeDisplay(changeElements)
-}
+  };
+  changeDisplay(changeElements);
+};
 
 // ===================================== SENSE SELECTION EVENTS =====================================
 // ===================================== SIGHT BUTTON EVENT =====================================
@@ -188,9 +188,9 @@ sight.onclick = function () {
     antarctica: "block",
     oceania2: "block",
     categoryContinent: "inline"
-  }
-  changeDisplay(changeElements)
-}
+  };
+  changeDisplay(changeElements);
+};
 
 // ===================================== SOUND1 & SOUND2 BUTTONS EVENT =====================================
 function sound() {
@@ -198,7 +198,7 @@ function sound() {
     oceania1: "block",
     asia2: "block",
     categoryContinent: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 sound1.onclick = sound;
@@ -210,7 +210,7 @@ function smell() {
     asia1: "block",
     europe2: "block",
     categoryContinent: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 smell1.onclick = smell;
@@ -222,7 +222,7 @@ function taste() {
     europe1: "block",
     americas2: "block",
     categoryContinent: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 taste1.onclick = taste;
@@ -234,9 +234,9 @@ touch.onclick = function () {
     americas1: "block",
     africa: "block",
     categoryContinent: "inline"
-  }
-  changeDisplay(changeElements)
-}
+  };
+  changeDisplay(changeElements);
+};
 
 // ===================================== CONTINENT SELECTION EVENTS =====================================
 // ===================================== ANTARCTICA BUTTON EVENT =====================================
@@ -245,9 +245,9 @@ antarctica.onclick = function () {
     dolphin: "block",
     stork: "block",
     categoryAnimal: "inline"
-  }
-  changeDisplay(changeElements)
-}
+  };
+  changeDisplay(changeElements);
+};
 
 // ===================================== OCEANIA1 & OCEANIA2 BUTTONS EVENT =====================================
 function oceania() {
@@ -255,7 +255,7 @@ function oceania() {
     eagle: "block",
     boar: "block",
     categoryAnimal: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 oceania1.onclick = oceania;
@@ -267,7 +267,7 @@ function asia() {
     mouse: "block",
     peacock: "block",
     categoryAnimal: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 asia1.onclick = asia;
@@ -279,7 +279,7 @@ function europe() {
     owl: "block",
     pig: "block",
     categoryAnimal: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 europe1.onclick = europe;
@@ -291,7 +291,7 @@ function americas() {
     horse: "block",
     swan: "block",
     categoryAnimal: "inline"
-  }
+  };
   changeDisplay(changeElements);
 }
 americas1.onclick = americas;
@@ -303,9 +303,9 @@ africa.onclick = function () {
     serpent: "block",
     donkey: "block",
     categoryAnimal: "inline"
-  }
-  changeDisplay(changeElements)
-}
+  };
+  changeDisplay(changeElements);
+};
 
 // ===================================== ANIMAL SELECTION EVENTS =====================================
 // ===================================== DOLPHIN BUTTON EVENT =====================================
@@ -313,81 +313,81 @@ dolphin.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("poseidon").style.display = "block";
-}
+};
 
 // ===================================== STORK BUTTON EVENT =====================================
 stork.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("hermes").style.display = "block";
-}
+};
 
 // ===================================== EAGLE BUTTON EVENT =====================================
 eagle.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("zeus").style.display = "block";
-}
+};
 
 // ===================================== BOAR BUTTON EVENT =====================================
 boar.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("ares").style.display = "block";
-}
+};
 
 // ===================================== MOUSE BUTTON EVENT =====================================
 mouse.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("apollo").style.display = "block";
-}
+};
 
 // ===================================== PEACOCK BUTTON EVENT =====================================
 peacock.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("hera").style.display = "block";
-}
+};
 
 // ===================================== OWL BUTTON EVENT =====================================
 owl.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("athena").style.display = "block";
-}
+};
 
 // ===================================== PIG BUTTON EVENT =====================================
 pig.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("demeter").style.display = "block";
-}
+};
 
 // ===================================== HORSE BUTTON EVENT =====================================
 horse.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("artemis").style.display = "block";
-}
+};
 
 // ===================================== SWAN BUTTON EVENT =====================================
 swan.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("aphrodite").style.display = "block";
-}
+};
 
 // ===================================== SERPENT BUTTON EVENT =====================================
 serpent.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("hades").style.display = "block";
-}
+};
 
 // ===================================== DONKEY BUTTON EVENT =====================================
 donkey.onclick = function () {
   stopTimer();
   godResult();
   document.getElementById("hephaestus").style.display = "block";
-}
+};

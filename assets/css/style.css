@@ -253,6 +253,10 @@ footer {
     font-size: 150%;
 }
 
+#result img {
+    height: 400px;
+    width: 400px;
+}
 #result {
     width: 100%;
     height: fit-content;
