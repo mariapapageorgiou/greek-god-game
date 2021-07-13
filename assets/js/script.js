@@ -21,7 +21,7 @@ window.onclick = function (event) {
 
 // ===================================== TIMER =====================================
 
-let timeLeft = 5;
+let timeLeft = 15;
 var myVar;
 
 function countdown() {

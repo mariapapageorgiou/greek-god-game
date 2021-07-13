@@ -57,15 +57,15 @@ a:hover,
     border-bottom: none;
 }
 
-/* ================================================= INTRO HOME PAGE ================================================= */
+/* ================================================= INTRO HOME PAGE & ABOUT PAGE ================================================= */
 
-#intro {
+#intro, #about {
     width: 100%;
     background-color: inherit;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
-#intro-text {
+#intro-text, #about-text {
     background-color: #ffcb90;
     width: 55vw;
     border-radius: 50px;
@@ -73,10 +73,13 @@ a:hover,
     padding-bottom: 50px;
     box-shadow: 0px 0px 5px black;
 }
+#about-text{
+    width: 35vw;
+}
 
-/* ======================== INTRO H1, GUIDE MODAL H1, FEEDBACK MODAL H1 ======================== */
+/* ======================== INTRO H1, GUIDE MODAL H1, FEEDBACK MODAL H1, ABOUT H1 ======================== */
 #intro-text h1,
-.guide-content h1 {
+.guide-content h1, #about-text h1 {
     padding: 40px 25px;
     text-shadow: 3px 2px #cea06c;
     letter-spacing: 1px;
@@ -85,7 +88,7 @@ a:hover,
 #intro-text p,
 #begin,
 #btn-choices button,
-#try-again, #restart {
+#try-again, #restart, #begin-again {
     background-color: lightgoldenrodyellow;
     border-radius: 50px;
     margin: 0 50px 50px;
@@ -95,9 +98,14 @@ a:hover,
     box-shadow: 0px 0px 10px black;
 }
 
+#about-text p {
+    padding: 0 25px 30px;
+    text-align: justify;
+}
+
 #begin,
 #btn-choices button,
-#try-again, #restart {
+#try-again, #restart, #begin-again {
     font-size: 225%;
     padding: 10px 50px;
     margin: 0 auto;
@@ -116,7 +124,7 @@ a:hover,
 
 #begin:hover,
 #btn-choices button:hover,
-#try-again:hover, #restart:hover {
+#try-again:hover, #restart:hover, #begin-again:hover {
     background-color: black;
     color: lightgoldenrodyellow;
     transition-duration: 2000ms;
@@ -137,7 +145,6 @@ ol li {
 
 footer {
     width: 56%;
-    position: fixed;
     bottom: 0;
     left: 22%;
     font-size: 110%;
@@ -242,7 +249,7 @@ footer {
 
 #choices, #restart-div {
     width: 100%;
-    height: 600px;
+    height: 500px;
     font-size: 150%;
 }
 
@@ -362,7 +369,7 @@ footer {
 /* ======================================= SCREEN SIZE 1024px TO 768px (laptop to tablet) ======================================= */
 @media screen and (max-width:1024px) {
 
-    #intro-text {
+    #intro-text, #about-text {
         width: 70vw;
     }
 
@@ -372,7 +379,7 @@ footer {
         line-height: 30px;
     }
 
-    #intro-text {
+    #intro-text, #about-text {
         padding-bottom: 30px;
     }
 
@@ -382,13 +389,12 @@ footer {
     }
 
     #intro-text h1,
-    .guide-content h1 {
+    .guide-content h1, #about-text h1 {
         padding: 30px 25px;
     }
 
     #intro-text p {
         margin-bottom: 30px;
-
     }
 
     #begin {
@@ -407,8 +413,12 @@ footer {
 /* ======================================= SCREEN SIZE 768px TO 556px (tablet) ======================================= */
 @media screen and (max-width:768px) {
 
+    .modal {
+        padding-bottom: 500px;
+    }
+
     #choices {
-        height: 500px;
+        height: 300px;
     }
 
     #heading-choices {
@@ -431,7 +441,7 @@ footer {
         font-size: 95%;
     }
 
-    #intro-text {
+    #intro-text, #about-text {
         width: 80vw;
     }
 
@@ -462,7 +472,11 @@ footer {
     }
 
     #result p {
-        width: 300px;
+        width: 100px;
+    }
+
+    ol li {
+        margin: 0 20px 0 40px;
     }
 }
 
@@ -513,6 +527,15 @@ footer {
 
     #result p {
         width: 250px;
+    }
+
+    .modal {
+        height: 1000px;
+    }
+
+    ol li {
+        padding: 0 5px;
+        margin: 0 12px 0 25px;
     }
 }
 
