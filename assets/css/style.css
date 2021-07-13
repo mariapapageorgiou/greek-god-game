@@ -13,7 +13,8 @@ body {
 }
 
 p,
-h6, ol {
+h6,
+ol {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -59,13 +60,15 @@ a:hover,
 
 /* ================================================= INTRO HOME PAGE & ABOUT PAGE ================================================= */
 
-#intro, #about {
+#intro,
+#about {
     width: 100%;
     background-color: inherit;
     margin-bottom: 50px;
 }
 
-#intro-text, #about-text {
+#intro-text,
+#about-text {
     background-color: #ffcb90;
     width: 55vw;
     border-radius: 50px;
@@ -73,13 +76,15 @@ a:hover,
     padding-bottom: 50px;
     box-shadow: 0px 0px 5px black;
 }
-#about-text{
+
+#about-text {
     width: 35vw;
 }
 
 /* ======================== INTRO H1, GUIDE MODAL H1, FEEDBACK MODAL H1, ABOUT H1 ======================== */
 #intro-text h1,
-.guide-content h1, #about-text h1 {
+.guide-content h1,
+#about-text h1 {
     padding: 40px 25px;
     text-shadow: 3px 2px #cea06c;
     letter-spacing: 1px;
@@ -88,7 +93,9 @@ a:hover,
 #intro-text p,
 #begin,
 #btn-choices button,
-#try-again, #restart, #begin-again {
+#try-again,
+#restart,
+#begin-again {
     background-color: lightgoldenrodyellow;
     border-radius: 50px;
     margin: 0 50px 50px;
@@ -105,7 +112,9 @@ a:hover,
 
 #begin,
 #btn-choices button,
-#try-again, #restart, #begin-again {
+#try-again,
+#restart,
+#begin-again {
     font-size: 225%;
     padding: 10px 50px;
     margin: 0 auto;
@@ -124,7 +133,9 @@ a:hover,
 
 #begin:hover,
 #btn-choices button:hover,
-#try-again:hover, #restart:hover, #begin-again:hover {
+#try-again:hover,
+#restart:hover,
+#begin-again:hover {
     background-color: black;
     color: lightgoldenrodyellow;
     transition-duration: 2000ms;
@@ -247,7 +258,8 @@ footer {
 
 /* ================================================= CHOICES & RESULTS ================================================= */
 
-#choices, #restart-div {
+#choices,
+#restart-div {
     width: 100%;
     height: 500px;
     font-size: 150%;
@@ -257,6 +269,7 @@ footer {
     height: 400px;
     width: 400px;
 }
+
 #result {
     width: 100%;
     height: fit-content;
@@ -346,7 +359,8 @@ footer {
     padding: 20px 0 40px;
 }
 
-#btn-choices button, #restart {
+#btn-choices button,
+#restart {
     font-family: 'Caesar Dressing', cursive;
     font-size: 150%;
     padding: 5px 30px;
@@ -359,21 +373,22 @@ footer {
 #timer {
     padding: 40px;
     font-size: 300%;
+    color: green;
+    text-shadow: 2px 1px black;
 }
 
-#restart-div p{
+#restart-div p {
     font-size: 125%;
     padding: 100px 10px 50px;
 }
-
-
 
 /* ================================================= MEDIA QUERIES ================================================= */
 
 /* ======================================= SCREEN SIZE 1024px TO 768px (laptop to tablet) ======================================= */
 @media screen and (max-width:1024px) {
 
-    #intro-text, #about-text {
+    #intro-text,
+    #about-text {
         width: 70vw;
     }
 
@@ -383,7 +398,8 @@ footer {
         line-height: 30px;
     }
 
-    #intro-text, #about-text {
+    #intro-text,
+    #about-text {
         padding-bottom: 30px;
     }
 
@@ -393,7 +409,8 @@ footer {
     }
 
     #intro-text h1,
-    .guide-content h1, #about-text h1 {
+    .guide-content h1,
+    #about-text h1 {
         padding: 30px 25px;
     }
 
@@ -445,7 +462,8 @@ footer {
         font-size: 95%;
     }
 
-    #intro-text, #about-text {
+    #intro-text,
+    #about-text {
         width: 80vw;
     }
 
