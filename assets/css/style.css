@@ -85,7 +85,7 @@ a:hover,
 #intro-text p,
 #begin,
 #btn-choices button,
-#try-again {
+#try-again, #restart {
     background-color: lightgoldenrodyellow;
     border-radius: 50px;
     margin: 0 50px 50px;
@@ -97,7 +97,7 @@ a:hover,
 
 #begin,
 #btn-choices button,
-#try-again {
+#try-again, #restart {
     font-size: 225%;
     padding: 10px 50px;
     margin: 0 auto;
@@ -116,7 +116,7 @@ a:hover,
 
 #begin:hover,
 #btn-choices button:hover,
-#try-again:hover {
+#try-again:hover, #restart:hover {
     background-color: black;
     color: lightgoldenrodyellow;
     transition-duration: 2000ms;
@@ -240,7 +240,7 @@ footer {
 
 /* ================================================= CHOICES & RESULTS ================================================= */
 
-#choices {
+#choices, #restart-div {
     width: 100%;
     height: 600px;
     font-size: 150%;
@@ -264,6 +264,7 @@ footer {
     margin: 0 auto;
 }
 
+#restart-div,
 #categoryColor,
 #categorySeason,
 #categorySense,
@@ -334,7 +335,7 @@ footer {
     padding: 20px 0 40px;
 }
 
-#btn-choices button {
+#btn-choices button, #restart {
     font-family: 'Caesar Dressing', cursive;
     font-size: 150%;
     padding: 5px 30px;
@@ -347,6 +348,11 @@ footer {
 #timer {
     padding: 40px;
     font-size: 300%;
+}
+
+#restart-div p{
+    font-size: 125%;
+    padding: 100px 10px 50px;
 }
 
 

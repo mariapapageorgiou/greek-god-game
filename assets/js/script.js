@@ -19,6 +19,33 @@ window.onclick = function (event) {
   }
 }
 
+// ===================================== TIMER =====================================
+
+let timeLeft = 15;
+
+function countdown() {
+  timeLeft--;
+  let timeCount = document.getElementById("timer-text");
+  timeCount.innerHTML = String(timeLeft);
+
+  if (timeLeft < 0) {
+    document.getElementById("choices").style.display = "none";
+    document.getElementById("restart-div").style.display = "block";
+  } else {
+
+    if (timeLeft == 10) {
+      timeCount.style.color = "yellow";
+    }
+    if (timeLeft == 5) {
+      timeCount.style.color = "red";
+    }
+
+    setTimeout(countdown, 1000);
+  }
+};
+
+setTimeout(countdown, 1000);
+
 // ===================================== FUNCTION FOR CHANGING THE DISPLAY =====================================
 function changeDisplay(changeElements) {
   setAllElementsNone();
