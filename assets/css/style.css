@@ -395,7 +395,8 @@ footer {
     footer {
         width: 70%;
         left: 15%;
-        line-height: 30px;
+        font-size: 150%;
+        line-height: 35px;
     }
 
     #intro-text,
