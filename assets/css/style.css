@@ -12,8 +12,13 @@ body {
     text-align: center;
 }
 
-p, h6 {
+p,
+h6 {
     font-family: 'Orbitron', sans-serif;
+}
+
+h6 {
+    padding: 0 0 20px;
 }
 
 /* ================================================= NAVIGATION ================================================= */
@@ -83,6 +88,8 @@ a:hover,
 #try-again {
     background-color: lightgoldenrodyellow;
     border-radius: 50px;
+    margin: 0 50px 50px;
+    padding: 25px;
     text-align: justify;
     line-height: 150%;
     box-shadow: 0px 0px 10px black;
@@ -91,14 +98,20 @@ a:hover,
 #begin,
 #btn-choices button,
 #try-again {
+    font-size: 225%;
+    padding: 10px 50px;
     margin: 0 auto;
     letter-spacing: 1px;
     text-shadow: 2px 1px #cea06c;
 }
 
+#btn-choices button {
+    cursor: pointer;
+}
+
 #try-again {
- font-size: 225%;
-    padding: 10px 50px; 
+    font-size: 225%;
+    padding: 10px 30px;
 }
 
 #begin:hover,
@@ -231,9 +244,15 @@ footer {
 }
 
 #result div {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 0 50px;
+}
+
+#result p {
+    width: 400px;
+    text-align: justify;
+    margin: 0 auto;
 }
 
 #categoryColor,
@@ -295,6 +314,11 @@ footer {
 #hades,
 #hephaestus {
     display: none;
+}
+
+#result h1 {
+    padding: 0 0 20px;
+    font-size: 300%;
 }
 
 #heading-choices {
@@ -384,103 +408,135 @@ footer {
         padding: 15px;
         font-size: 250%;
     }
+}
 
-    /* ======================================= SCREEN SIZE 555px TO 375px (smaller tablet to mobile M) ======================================= */
-    @media screen and (max-width:555px) {
-        body {
-            font-size: 95%;
-        }
-
-        #intro-text {
-            width: 80vw;
-        }
-
-        #intro-text p {
-            margin: 0 25px 50px;
-        }
-
-        footer {
-            width: 80%;
-            left: 10%;
-        }
-
-        .rules-content {
-            width: 60vw;
-        }
-
-        .rules-content p {
-            padding: 0 25px 30px;
-        }
-
-        .close {
-            padding: 20px 25px 0 0;
-        }
+/* ======================================= SCREEN SIZE 555px TO 375px (smaller tablet to mobile M) ======================================= */
+@media screen and (max-width:555px) {
+    body {
+        font-size: 95%;
     }
 
-    @media screen and (max-width:444px) {
-
-        body {
-            font-size: 85%;
-        }
+    #intro-text {
+        width: 80vw;
     }
 
-    /* ======================================= SCREEN SIZE 375px AND BELOW (mobile M and smaller) ======================================= */
-    @media screen and (max-width:395px) {
-
-        footer {
-            width: 50%;
-            left: 25%;
-            line-height: 30px;
-            border-radius: 30px;
-        }
-
-        #footer-ul,
-        #feedback,
-        #copyrights {
-            width: 100%;
-            padding: 0;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .list-items-footer li {
-            float: none;
-            display: inline;
-            margin: 0 auto;
-        }
-
-        #feedback a {
-            margin: 0 auto;
-        }
+    #intro-text p {
+        margin: 0 25px 50px;
     }
 
-    @media screen and (max-width:320px) {
-
-        body {
-            font-size: 75%;
-        }
-
-        .list-items li {
-            margin: 0 15px;
-        }
-
-        #intro-text p {
-            margin: 0 15px 25px;
-        }
+    footer {
+        width: 80%;
+        left: 10%;
     }
 
-    @media screen and (max-width:290px) {
-
-        #navigation {
-            line-height: 40px;
-        }
-
-        .list-items {
-            display: block;
-            margin: 0 auto 15px;
-        }
-
-        .rules-content {
-            width: 70vw;
-        }
+    .rules-content {
+        width: 60vw;
     }
+
+    .rules-content p {
+        padding: 0 25px 30px;
+    }
+
+    .close {
+        padding: 20px 25px 0 0;
+    }
+
+    #result img {
+        height: 300px;
+        width: 300px;
+    }
+
+    #result p {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:444px) {
+
+    body {
+        font-size: 85%;
+    }
+}
+
+/* ======================================= SCREEN SIZE 375px AND BELOW (mobile M and smaller) ======================================= */
+@media screen and (max-width:395px) {
+
+    #result {
+        margin-bottom: 200px;
+    }
+
+    footer {
+        width: 50%;
+        left: 25%;
+        line-height: 30px;
+        border-radius: 30px;
+    }
+
+    #footer-ul,
+    #feedback,
+    #copyrights {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .list-items-footer li {
+        float: none;
+        display: inline;
+        margin: 0 auto;
+    }
+
+    #feedback a {
+        margin: 0 auto;
+    }
+
+    #result img {
+        height: 250px;
+        width: 250px;
+    }
+
+    #result p {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    body {
+        font-size: 75%;
+    }
+
+    .list-items li {
+        margin: 0 15px;
+    }
+
+    #intro-text p {
+        margin: 0 15px 25px;
+    }
+}
+
+@media screen and (max-width:290px) {
+
+    #navigation {
+        line-height: 40px;
+    }
+
+    .list-items {
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .rules-content {
+        width: 70vw;
+    }
+
+    #result img {
+        height: 200px;
+        width: 200px;
+    }
+
+    #result p {
+        width: 200px;
+    }
+}
