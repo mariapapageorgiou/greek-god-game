@@ -28,6 +28,7 @@ function countdown() {
   let timeCount = document.getElementById("timer-text");
   timeCount.innerHTML = String(timeLeft);
 
+
   if (timeLeft < 0) {
     document.getElementById("choices").style.display = "none";
     document.getElementById("restart-div").style.display = "block";
