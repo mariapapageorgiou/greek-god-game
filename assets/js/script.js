@@ -1,9 +1,9 @@
-// ===================================== RULES MODAL =====================================
+// ===================================== GUIDE MODAL =====================================
 
-let modal = document.getElementById("rulesModal");
-let rulesBtn = document.getElementById("rulesBtn");
+let modal = document.getElementById("guideModal");
+let guideBtn = document.getElementById("guideBtn");
 
-rulesBtn.onclick = function () {
+guideBtn.onclick = function () {
   modal.style.display = "block";
 }
 
