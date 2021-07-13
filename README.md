@@ -309,7 +309,7 @@ Code Validation:
 
 3. The [Esprima: Syntax Validator](https://esprima.org/demo/validate.html) website  was used to validate the `JavaScript` code.
 
-![JavaScript validation results](assets/images/validation/jacascriptValidation.png)
+![JavaScript validation results](assets/images/validation/javascriptValidation1.png)
 
 4. The [Lighthouse Google Extention](https://developers.google.com/web/tools/lighthouse) was used to create a report for the live website.
 

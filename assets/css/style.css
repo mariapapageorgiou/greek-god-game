@@ -67,6 +67,10 @@ a:hover,
     margin-bottom: 50px;
 }
 
+#about {
+    margin: 100px 0 150px; 
+}
+
 #intro-text,
 #about-text {
     background-color: #ffcb90;
